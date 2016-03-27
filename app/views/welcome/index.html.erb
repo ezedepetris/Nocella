@@ -38,7 +38,8 @@
                         <h3>Cargar un producto</h3>
                         <p>Formulario para cargar un nuevo producto al sistem</p>
                         <p>
-                            <a href="#" class="btn btn-primary">Entrar</a>
+                            <!-- <a href="#" class="btn btn-primary">Entrar</a> -->
+                            <%= link_to "Crear", "products#new" %>
                         </p>
                     </div>
                 </div>
@@ -51,7 +52,8 @@
                         <h3>Eliminar un Producto</h3>
                         <p>Formulario para eliminar un producto existente del sistema</p>
                         <p>
-                            <a href="#" class="btn btn-primary">Entrar</a>
+                            <!-- <a href="#" class="btn btn-primary">Entrar</a> -->
+                            <%= link_to "Eliminar", "products#delete" %>
                         </p>
                     </div>
                 </div>
@@ -64,7 +66,8 @@
                         <h3>Listado de productos</h3>
                         <p>Listado de todos los productos existentes en el sistema</p>
                         <p>
-                            <a class="btn btn-primary"<%= link_to "entrar", products_path %></a>
+                            <!-- <a class="btn btn-primary"<%= link_to "entrar", products_path %></a> -->
+                            <%= link_to "Listado", "products#index" %>
                         </p>
                     </div>
                 </div>
@@ -77,7 +80,8 @@
                         <h3>Editar productos</h3>
                         <p>Formulario para modificar productos existentes</p>
                         <p>
-                            <a href="#" class="btn btn-primary">Entrar</a>
+                            <!-- <a href="#" class="btn btn-primary">Entrar</a> -->
+                            <%= link_to "Editar", "products#index" %>
                         </p>
                     </div>
                 </div>
@@ -89,7 +93,7 @@
         <hr>
 
         <!-- Footer -->
-        
+
 
     </div>
     <!-- /.container -->

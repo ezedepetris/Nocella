@@ -14,6 +14,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 gem 'font-awesome-sass', '~> 4.5'
 
+gem 'activeadmin', '1.0.0.pre1'
+gem 'devise'
+
 
 group :development, :test do
   gem 'byebug'
