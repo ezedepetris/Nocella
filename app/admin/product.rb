@@ -1,7 +1,7 @@
 ActiveAdmin.register Product do
   config.batch_actions = false
   menu priority: 6
-  permit_params :name, :price, :code, :company_id, :distributor_id
+  permit_params :name, :price, :code, :stock,:company_id, :distributor_id
 
   show do |product|
     attributes_table do
@@ -11,6 +11,7 @@ ActiveAdmin.register Product do
         number_to_currency(product.price)
       end
       row :code
+      row :stock
       row :company
       row :distributor
     end
@@ -21,6 +22,7 @@ ActiveAdmin.register Product do
       f.input :name
       f.input :price
       f.input :code
+      f.input :stock
       f.input :company, as: :select
       f.input :distributor, as: :select
     end
@@ -34,6 +36,7 @@ ActiveAdmin.register Product do
       number_to_currency(product.price)
     end
     column :code
+    column :stock
     column :company
     column :distributor
     actions
@@ -42,4 +45,6 @@ ActiveAdmin.register Product do
   filter :id
   filter :name
   filter :price
+  filter :distributor
+  filter :company
 end
