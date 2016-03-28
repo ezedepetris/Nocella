@@ -17,6 +17,9 @@ gem 'font-awesome-sass', '~> 4.5'
 gem 'activeadmin', '1.0.0.pre1'
 gem 'devise'
 
+source 'https://rails-assets.org' do
+  gem 'rails-assets-datatables'
+end
 
 group :development, :test do
   gem 'byebug'

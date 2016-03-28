@@ -13,4 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap-sprockets
+
+// OTHER PAGES
+//= require datatables
+//= require datatables/dataTables.bootstrap.js
+
 //= require_tree .

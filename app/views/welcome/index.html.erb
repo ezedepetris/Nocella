@@ -4,105 +4,76 @@
 
 <body>
 
-    <!-- Navigation -->
+  <!-- Navigation -->
 
-    <!-- Page Content -->
-    <div class="container">
+  <!-- Page Content -->
+  <div class="container">
 
-        <!-- Jumbotron Header -->
-        <header class="jumbotron hero-spacer">
-            <!-- <h1>A Warm Welcome!</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
-            <p><a class="btn btn-primary btn-large">Call to action!</a>
-            </p> -->
-            <img src="nocella.jpg">
-        </header>
+      <!-- Jumbotron Header -->
+      <header class="jumbotron hero-spacer">
+          <!-- <h1>A Warm Welcome!</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
+          <p><a class="btn btn-primary btn-large">Call to action!</a>
+          </p> -->
+          <img src="nocella.jpg">
+      </header>
 
-        <hr>
+      <hr>
 
-        <!-- Title -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h3>Menu Principal</h3>
-            </div>
-        </div>
-        <!-- /.row -->
+      <!-- Title -->
+      <div class="row">
+          <div class="col-lg-12">
+              <h3>Menu Principal</h3>
+          </div>
+      </div>
+      <!-- /.row -->
 
-        <!-- Page Features -->
-        <div class="row text-center">
+      <!-- Page Features -->
+      <div class="row text-center">
+          <div class="col-md-6 col-sm-6 hero-feature">
+              <div class="thumbnail">
+                  <img src="http://placehold.it/800x500" alt="">
+                  <div class="caption">
+                      <h3>Listado de productos</h3>
+                      <p>Listado de todos los productos existentes en el sistema</p>
+                      <p>
+                          <!-- <a class="btn btn-primary"<%= link_to "entrar", products_path %></a> -->
+                          <%= link_to "Entrar", "products#index" %>
+                      </p>
+                  </div>
+              </div>
+          </div>
 
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
-                    <div class="caption">
-                        <h3>Cargar un producto</h3>
-                        <p>Formulario para cargar un nuevo producto al sistem</p>
-                        <p>
-                            <!-- <a href="#" class="btn btn-primary">Entrar</a> -->
-                            <%= link_to "Crear", "products#new" %>
-                        </p>
-                    </div>
-                </div>
-            </div>
+          <div class="col-md-6 col-sm-6 hero-feature">
+              <div class="thumbnail">
+                  <img src="http://placehold.it/800x500" alt="">
+                  <div class="caption">
+                      <h3>Entrar al sistema</h3>
+                      <p>Aqui podras acceder al sistema como administrador con tu nombre de usuario y tu clave</p>
+                      <p>
+                          <!-- <a href="#" class="btn btn-primary">Entrar</a> -->
+                          <%= link_to "Entrar", "admin" %>
+                      </p>
+                  </div>
+              </div>
+          </div>
 
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
-                    <div class="caption">
-                        <h3>Eliminar un Producto</h3>
-                        <p>Formulario para eliminar un producto existente del sistema</p>
-                        <p>
-                            <!-- <a href="#" class="btn btn-primary">Entrar</a> -->
-                            <%= link_to "Eliminar", "products#delete" %>
-                        </p>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <!-- /.row -->
 
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
-                    <div class="caption">
-                        <h3>Listado de productos</h3>
-                        <p>Listado de todos los productos existentes en el sistema</p>
-                        <p>
-                            <!-- <a class="btn btn-primary"<%= link_to "entrar", products_path %></a> -->
-                            <%= link_to "Listado", "products#index" %>
-                        </p>
-                    </div>
-                </div>
-            </div>
+      <hr>
 
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
-                    <div class="caption">
-                        <h3>Editar productos</h3>
-                        <p>Formulario para modificar productos existentes</p>
-                        <p>
-                            <!-- <a href="#" class="btn btn-primary">Entrar</a> -->
-                            <%= link_to "Editar", "products#index" %>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Footer -->
+      <!-- Footer -->
 
 
-    </div>
-    <!-- /.container -->
+  </div>
+  <!-- /.container -->
+  
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
 
 </body>
 
