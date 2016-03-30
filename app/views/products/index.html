@@ -13,9 +13,9 @@
             <th>Nombre</th>
             <th>Codigo</th>
             <th>Marca</th>
-            <th>Precio</th>
             <th>Distribuidor</th>
             <th>stock</th>
+            <th>Precio</th>
             <th>Accion</th>
           </thead>
           <tfoot></tfoot>
@@ -24,11 +24,12 @@
               <tr>
                 <td> <%=f.name%> </th>
                 <td> <%=f.code%> </th>
-                <td> Gacella</th>
-                <td> <%=f.price%> </th>
-                <td> Nocella </th>
+                <td> <%=f.company.name%> </th>
+                <td> <%=f.distributor.name%> </th>
                 <td> <%=f.stock%> </th>
-                <td> <%=link_to "Ver mas", 'products/show', class: 'btn btn-success'%> </th>
+                <td> <%=number_to_currency f.price%> </th>
+                <td> <%=link_to "Ver mas", 'products/show', class: 'btn btn-primary'%>
+               <%=(link_to "Comprar", root_path, class: 'btn btn-primary') if (f.stock >0)%> </th>
               </tr>
             <%end%>
           </tbody>
