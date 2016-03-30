@@ -1,0 +1,40 @@
+<div id="products" class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">Ventas Septiembre</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12 col-xs-12">
+      <div class="table-responsive">
+        <table id="result-products" class="table table-bordered table-striped table-hover">
+          <thead>
+            <th>Nombre</th>
+            <th>Codigo</th>
+            <th>Marca</th>
+            <th>Distribuidor</th>
+            <th>Precio</th>
+          </thead>
+          <tfoot></tfoot>
+          <tbody>
+            <% 10.times do%>
+              <tr>
+                <td> nombre </th>
+                <td> codigo </th>
+                <td> compania </th>
+                <td> distribuidor </th>
+                <td> <%= number_to_currency 1000%> </th>
+              </tr>
+            <%end%>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-12">
+      <h1 class="page-header">total
+      	<small> <%= number_to_currency 10000%></small>
+      </h1>
+    </div>
+</div>
